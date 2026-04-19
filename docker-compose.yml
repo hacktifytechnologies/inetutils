@@ -1,0 +1,7 @@
+services:
+  telnetd:
+    image: hacktifytechnologies/hacktify-inetutils:latest
+    container_name: hacktify-inetutils
+    ports:
+      - "2323:23"
+    restart: unless-stopped
